@@ -1,5 +1,9 @@
-a := one two # a is set to the string "one two"
-b := 'one two' # Not recommended. b is set to the string "'one two'"
-all:
-	printf '$a'
-	printf $b
+hello: test.go
+	echo "Hello, World!"
+	echo "this line is just a test line"
+	go build test.go
+	./test
+
+clean: test
+	rm -f ./test
+

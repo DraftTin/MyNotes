@@ -1,14 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
-
-const (
-	a = iota
-	b
-)
+import "fmt"
 
 func main() {
-	fmt.Println(a, b)
+	a := 1
+	fmt.Println("hello, world!", a)
 }
